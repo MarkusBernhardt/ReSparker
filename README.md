@@ -4,7 +4,7 @@ ReSparker is currently a collection of information around the grinding rings for
 ## Why
 My main goal of this project is the protection of the interests, rights and freedoms of the owners of a Sparx skate sharpener machine.
 
-As the owner of my own little software company I can fully understand the interest of a company to protect its intellectual property, copyrights, patents, whatsoever, and the need to give the user guidance on the lifetime of the grinding rings. But as a bachelor of administrative law I also think this is not a one way street. The interests and rights of a company end where the interests and rights of their customers start. Where that exact border is, must be defined by the society through the lawmaker and not by companies or customers.
+I can fully understand the interest of a company to protect its intellectual property, copyrights, patents, whatsoever, and the need to give the user guidance on the lifetime of the grinding rings. But I also think this is not a one way street. The interests and rights of a company end where the interests and rights of their customers start. Where that exact border is, must be defined by the society through the lawmaker and not by companies or customers.
 
 That said. Yes, i am „messing into chip and cycle setup made by Sparx“. But the relevant question for me is, whether this setup by Sparx is lawful. And there I strongly believe this is currently only tolerated (meaning it would be even lawful to reverse engineer the firmware) and will be unlawful from mid 2026 on in the EU.
 
@@ -14,7 +14,7 @@ Telephone companies had to learn that. When I was young it was an indictable off
 
 Printer manufacturers had to learn that. They wanted to control, who is allowed to refill consumables, produce generic consumables, and so on.
 
-Sparx also needs to learn that disabling a ring by the skate sharpener machine is a no go. There are a lot more ways to ensure the quality of the grinding. Simply display a big, fat, scary warning. This is also how your car or your printer do it. When you miss the oil change interval of your car, or use non-genuine printer ink, will your car or printer still work. It only displays a warning and stores that somewhere in the system, so you cannot sue them, when your engine or print head explodes.
+Sparx also needs to learn that disabling a ring by the skate sharpener machine is a no go. There are a lot more ways to ensure the quality of the grinding. Simply display a big, fat, scary warning. This is also how your car or your printer are doing it. They still work, when you miss the oil change interval of your car or use non-genuine printer ink. They only displays a warning and store that somewhere in the system, so you cannot sue them, when your engine or print head explodes.
 
 ## Status
 Most of the data written on a grinding ring is decoded by now.
