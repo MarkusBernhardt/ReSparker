@@ -40,10 +40,10 @@ There might be multiple ways to read the password, but this is how I do it:
 * Wait for the Flipper Zero to catch the password
 * Write it down
 
-# Resetting the ring
+## Resetting the ring
 For all this I am using a Proxmark3 V3 Easy NFC kit.
 
-## Dump
+### Dump
 Check that everything works with a simple dump. Rings that require a password will only show the first records. Old rings all 45 rows.
 ```
 pm3 --> hf mfu dump
@@ -54,7 +54,7 @@ If a password is needed, get it with a Flipper Zero and add it.
 pm3 --> hf mfu dump -k DEADBEEF
 ```
 
-## Reset counters
+### Reset counters
 Reset the counter to 320 cycles.
 ```
 pm3 --> hf mfu wrbl -k DEADBEEF -b 06 -d 40014001
@@ -67,7 +67,7 @@ pm3 --> hf mfu wrbl -k DEADBEEF -b 06 -d FF0FFF0F
 pm3 --> hf mfu wrbl -k DEADBEEF -b 10 -d FF0FFF0F
 ```
 
-## Clean up 
+### Clean up 
 If there is any data in rows 16 to 33 (not 00000000), clean it.
 ```
 pm3 --> hf mfu wrbl -k DEADBEEF -b 16 -d 00000000
@@ -76,7 +76,7 @@ pm3 --> hf mfu wrbl -k DEADBEEF -b 17 -d 00000000
 pm3 --> hf mfu wrbl -k DEADBEEF -b 33 -d 00000000
 ```
 
-## Change the Sparx serial
+### Change the Sparx serial
 This is needed, when changing a ring that should be used in the same Sparx machine again. The serial is stored in the first two bytes of record 7 and all bytes of record 8. The copy of the serial is stored in the first two bytes of record 11 and all bytes of record 12. Records 8 and 12 can be simply overwritten. Rows 7 and 11 must be read, the first 2 bytes changed and written back.
 ```
 pm3 --> hf mfu rdbl -k DEADBEEF -b 7
