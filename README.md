@@ -102,5 +102,6 @@ pm3 --> hf mfu wrbl -k DEADBEEF -b 9 -d xxxxxx06
 All files in this repository are covered by one of two licenses:
 * [Creative Commons Attribution Non Commercial Share Alike 4.0 International](https://github.com/MarkusBernhardt/ReSparker/blob/main/LICENSE-CC-BY-NC-SA-4.0.txt)
 * [GNU Affero General Public License 3.0](https://github.com/MarkusBernhardt/ReSparker/blob/main/LICENSE-AGPL-3.0.txt)
+
 The default license throughout the repository is CC BY-NC-SA 4.0 unless the file header specifies another license.
 
