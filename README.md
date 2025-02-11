@@ -68,7 +68,7 @@ pm3 --> hf mfu wrbl -k DEADBEEF -b 10 -d FF0FFF0F
 ```
 
 # Clean up 
-If there is any row from 16 to 33 not empty (00000000), clean it.
+If there is any data in rows 16 to 33 (not 00000000), clean it.
 ```
 pm3 --> hf mfu wrbl -k DEADBEEF -b 16 -d 00000000
 pm3 --> hf mfu wrbl -k DEADBEEF -b 17 -d 00000000
@@ -77,7 +77,7 @@ pm3 --> hf mfu wrbl -k DEADBEEF -b 33 -d 00000000
 ```
 
 # Change the Sparx serial
-This is needed, when changing a ring that should be used in the same Sparx machine again. The serial is stored in the first two bytes of record 7 and all bytes of record 8. The copy of the serial is stored in the first two bytes of record 11 and all bytes of record 12. Records 8 and 12 can be simply overwritten. Rows 7 and 11 must be read, the first 2 bytes changed and written.
+This is needed, when changing a ring that should be used in the same Sparx machine again. The serial is stored in the first two bytes of record 7 and all bytes of record 8. The copy of the serial is stored in the first two bytes of record 11 and all bytes of record 12. Records 8 and 12 can be simply overwritten. Rows 7 and 11 must be read, the first 2 bytes changed and written back.
 ```
 pm3 --> hf mfu rdbl -k DEADBEEF -b 7
 pm3 --> hf mfu rdbl -k DEADBEEF -b 11
@@ -89,12 +89,12 @@ pm3 --> hf mfu wrbl -k DEADBEEF -b 12 -d 00000000
 ```
 
 # Change ring type
-The machine type is encoded in the last byte of record 7 and 9. Commercial machines are defined as 14. Consumer machines use 6.
+The machine type is encoded in the byte 4 of record 7 and 9. Commercial machines are defined as 14. Consumer machines use 6. The hollow of the ring is encoded in byte 3 of record 7 and coded differently for consumer and commercial rings. See the list in [Data Layout](https://github.com/MarkusBernhardt/ReSparker/blob/main/doc/ring-data-layout.txt). When you encounter a ring with an hollow not marked as confirmed, please give me a short notice.
 ```
 pm3 --> hf mfu rdbl -k DEADBEEF -b 7
 pm3 --> hf mfu rdbl -k DEADBEEF -b 9
 
-pm3 --> hf mfu wrbl -k DEADBEEF -b 7 -d xxxxxx06
+pm3 --> hf mfu wrbl -k DEADBEEF -b 7 -d xxxx2506
 pm3 --> hf mfu wrbl -k DEADBEEF -b 9 -d xxxxxx06
 ```
 
