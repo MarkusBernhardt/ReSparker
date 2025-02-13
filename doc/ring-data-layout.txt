@@ -24,20 +24,20 @@
                   #   3/4   07 (confirmed) 43 (confirmed)
                   #   20mm  08             44 (confirmed)
                   #   7/8   09 (confirmed) 45
-                  #         0a             46
-                  #   1     0b (confirmed) 47 (confirmed)
-                  #   1 1/8 0c             48 (confirmed)
-                  #   1 1/4 0d             49 (confirmed)
-                  #   1 1/2 0e             4a
-                  #   1 3/4 0f             4b
-                  #   1/4   10             4c
-                  #   13/16 11             4d
-                  #   15/16 12             4e
-                  #   Flat  13             4f
+                  #         0A             46
+                  #   1     0B (confirmed) 47 (confirmed)
+                  #   1 1/8 0C             48 (confirmed)
+                  #   1 1/4 0D             49 (confirmed)
+                  #   1 1/2 0E             4A
+                  #   1 3/4 0F             4B
+                  #   1/4   10             4C
+                  #   13/16 11             4D
+                  #   15/16 12             4E
+                  #   Flat  13             4F
                   #    
                   # Fire
-                  #   3/8   22             5e
-                  #   1/2   23 (confirmed) 5f
+                  #   3/8   22 (confirmed) 5E
+                  #   1/2   23 (confirmed) 5F
                   #   5/8   24 (confirmed) 60
                   #   3/4   25 (confirmed) 61
                   #    
