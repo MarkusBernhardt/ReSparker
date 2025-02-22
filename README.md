@@ -45,7 +45,7 @@ There might be multiple ways to read the password, but this is how I do it:
 * Get a [Proxmark 3 Easy](https://proxmark.com/proxmark-3-hardware/proxmark-3-easy)
 * Mount the ring to unlock into the Sparx sharpener machine
 * Keep the Sparx sharpener machine open
-* Put a little magnet on the left side of the machine. Look where the little magnet is screwed to the base. Put you magnet at the same spot at the opened upper section.
+* Put a magnet on the left side of the machine. Look where the factory mounted little magnet is screwed to the left side of the base. Put your magnet at the same spot on the opened upper section.
 * Activate sniffing on the Proxmark 3
 ```
 pm3 --> hf 14a sniff
