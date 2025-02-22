@@ -30,6 +30,7 @@ This is, how far we understand the layout by now: [Data Layout](https://github.c
 Current rings are locked with a password. For old rings is this step not required.
 
 There might be multiple ways to read the password, but this is how I do it:
+### Alternative 1: Flipper Zero
 * Get a [Flipper Zero](https://flipperzero.one)
 * Remove any ring from the Sparx sharpener machine
 * Close the Sparx sharpener machine and switch it on
@@ -39,6 +40,27 @@ There might be multiple ways to read the password, but this is how I do it:
 * Press the Flipper Zero at the glass of the Sparx machine, where the NFC ring is.
 * Wait for the Flipper Zero to catch the password
 * Write it down
+
+### Alternative 2: Proxmark 3
+* Get a [Proxmark 3 Easy](https://proxmark.com/proxmark-3-hardware/proxmark-3-easy)
+* Mount the ring to unlock into the Sparx sharpener machine
+* Keep the Sparx sharpener machine open
+* Put a little magnet on the left side of the machine. Look where the little magnet is screwed to the base. Put you magnet at the same spot at the opened upper section.
+* Activate sniffing on the Proxmark 3
+```
+pm3 --> hf 14a sniff
+```
+* Push the hf antenna of the Proxmark 3 directly on the black NFC reading ring of the Sparx sharpener machine
+* Switch the Sparx sharpener machine on and wait until the ring is recognized. The orange LED on the Proxmark 3 should be on/flickering during this time
+* Click the button on the Proxmark 3 to stop sniffing
+* Show the sniffed data
+```
+pm3 --> hf 14a list
+```
+* Search for the password in the data
+```
+51639632 |   51647792 | Rdr |1B  F8  91  38  6C  A4  63        |  ok | PWD-AUTH: 0xF891386C
+```
 
 ## Resetting the ring
 For all this I am using a Proxmark3 V3 Easy NFC kit.
