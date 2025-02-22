@@ -59,7 +59,7 @@ pm3 --> hf 14a list
 ```
 * Search for the password in the data
 ```
-51639632 |   51647792 | Rdr |1B  F8  91  38  6C  A4  63        |  ok | PWD-AUTH: 0xF891386C
+51639632 | 51647792 | Rdr |1B  F8  91  38  6C  A4  63  |  ok | PWD-AUTH: 0xF891386C
 ```
 
 ## Resetting the ring
