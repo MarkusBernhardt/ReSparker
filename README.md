@@ -1,6 +1,17 @@
 # ReSparker
 ReSparker is currently a collection of information around the grinding rings for the Sparx skate sharpening machine. With this information, the right hardware and some technical know-how can grinding rings, which have been disabled by the Sparx skate sharpener after 320 grinding cycles, be reset and activated again. In the long run I would like to add an iOS and Android app to automate the process, but this is for another day.
 
+## DMCA
+At the 10th March 2025 I received an eamil by GitHub informing me they received a DMCA takedown notice from Velasa Sports Inc., the company behind the Sparx sharpener. To show good will and reduce the financial risk I decided to delete the ReSparker repository from GitHub.
+
+At the 12th March 2025 I submitted a DMCA counter notice to GitHub.
+
+At the 28th April 2025 GitHub notified Velasa Sports Inc. of my DMCA counter notice.
+
+At the 14th May 2025 GitHub notified me that Velasa Sports Inc. has not filed an action to defend their DMCA takedown notice. Therefore I restored the ReSparker repository again.
+
+All the details can be found in te dmca folder or here: https://github.com/MarkusBernhardt/ReSparker/tree/main/dmca
+
 ## Why
 My main goal of this project is the protection of the interests, rights and freedoms of the owners of a Sparx skate sharpener machine.
 
